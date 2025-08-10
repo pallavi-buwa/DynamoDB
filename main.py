@@ -9,7 +9,7 @@ import json
 load_dotenv()
 app = FastAPI()
 
-genai.configure(api_key="AIzaSyAHY511CZEid3HR4V7ljTpnwd7ARkF1bW0")
+
 model = genai.GenerativeModel("gemini-2.0-flash")
 
 @app.post("/query")
